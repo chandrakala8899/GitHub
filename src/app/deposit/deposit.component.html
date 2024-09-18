@@ -1,0 +1,22 @@
+<div class="container">
+    <h2>Deposit Amount</h2>
+    
+    <form (submit)="onDeposit()">
+      <div class="form-group">
+        <label for="accountnumber">Account Number:</label>
+        <input type="text" id="accountnumber" class="form-control" [(ngModel)]="accountNumber" name="accountNumber" required>
+      </div>
+  
+      <div class="form-group">
+        <label for="amount">Amount:</label>
+        <input type="number" id="amount" class="form-control" [(ngModel)]="amount" name="amount" required>
+      </div>
+  
+      <button type="submit" class="btn btn-primary">Deposit</button>
+    </form>
+  
+    <div *ngIf="message" class="alert alert-info mt-3">
+      {{ message }}
+    </div>
+  </div>
+  

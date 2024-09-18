@@ -1,0 +1,15 @@
+.rating i {
+    color: #ffc107; /* Bootstrap's yellow color for stars */
+    font-size: 1.5rem;
+    margin-right: 5px;
+  }
+  .star-rating {
+    font-size: 2rem; /* Adjust the size of the stars */
+    color: #ffca28; /* Yellow color for the stars */
+    cursor: pointer; /* Show a pointer cursor when hovering over stars */
+  }
+  
+  .star-rating .fa-star-o {
+    color: #c5c5c5; /* Grey color for the empty stars */
+  }
+  

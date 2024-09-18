@@ -1,0 +1,10 @@
+
+<div class="login-container">
+  <h2>ATM Login</h2>
+  <input [(ngModel)]=" atm.cardNumber" type="text" placeholder="Card Number" />
+  <input [(ngModel)]=" atm.pin" type="password" placeholder="PIN" />
+  <button (click)="login()">Login</button>
+  <div *ngIf="message" class="error-message">{{ message }}</div>
+</div>
+
+  
