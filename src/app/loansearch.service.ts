@@ -22,7 +22,6 @@ export class LoansearchService {
     };
   
     return this.http.get("http://localhost:8080/createAccount/searchaccount",httpOptions)
-  
   }
   
 }

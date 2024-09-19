@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
 })
 export class AccountService {
 
- private api = 'http://localhost:8080/createAccount/Jpa';
+ private api = 'http://localhost:8080/createAccount';
   constructor(private http:HttpClient) { }
 
 createAccount(account:any):Observable<any>{
