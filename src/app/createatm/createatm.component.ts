@@ -15,7 +15,7 @@ export class CreateatmComponent {
     name: '',
     mobilenumber: '',
     pan: '',
-    balance: 0,
+    balance: '',
     accountnumber: '',
     address:new Address('','','','','') 
   }

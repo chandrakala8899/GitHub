@@ -15,7 +15,7 @@ import { AddressComponent } from '../address/address.component';
 export class CreateaccountComponent {
 accountNumber:string="Test";
 responseFlag:boolean=false;
-account=new Account('','','',0,'',new Address('','','','',''));
+account=new Account('','','',' ','',new Address('','','','',''));
 constructor(private service:AccountService,private router:Router){}
 
 createAccount(custaddress:AddressComponent){

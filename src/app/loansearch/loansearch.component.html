@@ -1,5 +1,47 @@
 <div>
+    <label for="accountnumber">AccountNumber</label>
     <input type=" text" name="accountnumber"
     placeholder="Enter AccountNumber"    [(ngModel)] ="accountnumber">
-    <button (click)="searchaccount()" > Search Account   </button>
+    <button (click)=" searchaccount()" > Search Account   </button>
 </div>
+
+<div>
+    <label for="accountnumber">Account Number</label>
+    <input type=" text" name="accountnumber"
+    placeholder="Enter AccountNumber"    [(ngModel)] ="accountnumber">
+    <label for="pan">Pan Number</label>
+    <input type=" text" name="pan"
+    placeholder="Enter Pan Number"    [(ngModel)] ="pan">
+    <button (click)="searchaccountbyAccountNumberAndPan()" > Search Account   </button>
+  </div>
+  
+    <div>
+      <label for="balance">Balance</label>
+      <input type=" text" name="balance"
+      placeholder="Enter balance"    [(ngModel)] ="balance">
+    
+      <button (click)="searchAccountByBalance()" > Search Account By Balance  less than   </button>
+    </div>
+  
+    <div>
+      <label for="balanceAmount">Balance</label>
+      <input type=" text" name="balanceAmount"
+      placeholder="Enter balance"    [(ngModel)] ="balanceAmount">
+    
+      <button (click)="searchAccountByBalanceGreater()" > Search Account By Balance Greater    </button>
+    </div>
+  
+    <div>
+      <label for="lowerRange">Lower Range</label>
+      <input type=" text" name="lowerRange"
+      placeholder="Enter lowerRange"    [(ngModel)] ="lowerRange">
+  
+      <label for="upperRange">Upper Range</label>
+      <input type=" text" name="upperRange"
+      placeholder="Enter upperRange"    [(ngModel)] ="upperRange">
+  
+    
+      <button (click)="searchAccountByBalanceRange()" > Search Account By Balance Range    </button>
+    </div>
+  
+   
